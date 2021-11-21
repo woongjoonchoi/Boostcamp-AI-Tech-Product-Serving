@@ -7,7 +7,7 @@ import typing as T
 from fastapi.testclient import TestClient
 from fastapi import status
 
-import app.main
+from app.presentation.app import app
 
 HERE = Path(__file__)
 TEST_INPUT_DIR = os.path.join(HERE.parent, "images")
@@ -28,7 +28,7 @@ def get_test_image_input(
 
 @pytest.fixture
 def client():
-    return TestClient(app=app.main.app)
+    return TestClient(app=app)
 
 
 def validate_uuid(val: T.Any) -> bool:

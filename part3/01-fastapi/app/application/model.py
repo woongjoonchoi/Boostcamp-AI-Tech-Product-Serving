@@ -14,7 +14,7 @@ from PIL import Image
 from efficientnet_pytorch import EfficientNet
 
 HERE = Path(__file__)
-ASSETS_DIR = os.path.join(HERE.parent.parent.parent.parent, "assets")
+ASSETS_DIR = os.path.join(HERE.parent.parent.parent.parent.parent, "assets")
 MODEL_PTH_PATH = os.path.join(ASSETS_DIR, "mask_task/model.pth")
 CONFIG_PATH = os.path.join(ASSETS_DIR, "mask_task/config.yaml")
 
