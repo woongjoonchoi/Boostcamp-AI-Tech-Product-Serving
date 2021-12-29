@@ -5,7 +5,7 @@ on:
       paths:
         - 'part2/04-cicd/**'
   pull_request: 
-      branches: [ main ]
+      branches: [ main , wjc_deploy_test]
       paths:
         - 'part2/04-cicd/**'
 
