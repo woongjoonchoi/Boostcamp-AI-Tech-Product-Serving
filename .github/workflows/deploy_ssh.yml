@@ -4,6 +4,10 @@ on:
       branches: [ main ]
       paths:
         - 'part2/04-cicd/**'
+  pull_request: 
+      branches: [ main ]
+      paths:
+        - 'part2/04-cicd/**'
 
 jobs:
   build:
